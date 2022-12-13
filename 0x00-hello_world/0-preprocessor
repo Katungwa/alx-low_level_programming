@@ -1,2 +1,2 @@
 #!/bin/bih
-gcc -E $CFILE > c
+gcc -E $CFILE.c > c
