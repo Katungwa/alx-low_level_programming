@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "gcc -E export $CFILE" > c
+#!/bin/bih
+gcc -E export $CFILE > c
