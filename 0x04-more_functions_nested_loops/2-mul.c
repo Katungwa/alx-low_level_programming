@@ -17,6 +17,7 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 }
+
 /**Last integer
 * @b: second integer
 * Return: addition of a and b
