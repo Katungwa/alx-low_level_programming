@@ -4,15 +4,19 @@
  * The variable c is to be checked
  */
 int _isupper(int m)
-{	/* A local variable declaration */
+{	
+	/* A local variable declaration */
+	int result;
+
 	if (m => 'A' && m => 'Z')
 	{	
-		return (1);
+		result = 1;
 	}
 	else
 	{
-		return (0)
+		result = 0;
 	}
-
+	return (result);
+}
 
 	
