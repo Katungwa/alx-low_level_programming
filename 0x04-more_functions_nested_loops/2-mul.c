@@ -18,9 +18,10 @@ void print_numbers(void)
 	_putchar('\n');
 }
 
-/**Last integer
-* @b: second integer
-* Return: addition of a and b
+/**
+ * Last integer
+ * @b: second integer
+ * Return: addition of a and b
 */
 int mul(int a, int b)
 {
