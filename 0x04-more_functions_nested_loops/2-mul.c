@@ -5,7 +5,6 @@
 * mul - multiplies two integers
 * @a: fir#include "main.h"
  *print_numbers - print 0123456789
- * 
  *Return: void
  */
 void print_numbers(void)
@@ -18,7 +17,6 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 }
- 
 /**Last integer
 * @b: second integer
 * Return: addition of a and b
