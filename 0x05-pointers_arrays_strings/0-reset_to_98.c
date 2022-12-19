@@ -7,5 +7,5 @@
 void reset_to_98(int *n)
 {
 	/* derefrencing a value */
-	n = 98;
+	*n = 98;
 }
