@@ -8,5 +8,17 @@
  */
 void print_rev(char *s)
 {
-	puts(strrev(s));
+	int len;
+	int right;
+	int left;
+	char 
+
+
+	len = strlen(s)
+	right = len - 1;
+	left = 0;
+
+	for (left; right > left; left++)
+	{
+
 }
