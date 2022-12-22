@@ -9,16 +9,17 @@
 void print_rev(char *s)
 {
 	int len;
-	int right;
-	int left;
-	char 
+	int middle;
+	int temp, i;
 
+	len = strlen(s);
+	middle = len / 2;
 
-	len = strlen(s)
-	right = len - 1;
-	left = 0;
-
-	for (left; right > left; left++)
+	for (i = 0; i < middle; i++)
 	{
-
+		temp = s[i];
+		s[i] = s[len -i-1];
+		s[len - i - 1] = temp;
+	}
+	puts(s);
 }
