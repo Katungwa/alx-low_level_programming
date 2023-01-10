@@ -8,7 +8,7 @@ int _prime_num(int, int);
  * @i: range of decider nums
  * Return: int 1 or 0
  */
-int _prime_num(n, i)
+int _prime_num(int n,int i)
 {
 	if (i > 9)
 		return (1);
