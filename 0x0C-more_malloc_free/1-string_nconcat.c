@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * string_nconcat - concatnates one string parameter to another
@@ -11,19 +10,39 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	int i, j;
+	int i, j, index;
 
-	i = strlen(s1);
-	j = strlen(s2);
+	if (s1 == NULL)
+		s1 == " ";
+
+	if (s2 == NULL)
+		s2 == " ";
+
+	i, j = 0;
+	while (*s1 != '\0')
+		s1++;
+		i++;
+
+	while (*s2 != '\0')
+		s2++;
+		j++;
 
 	s = malloc(i + n);
+
 	if (s == NULL)
 		return (NULL);
-	if (i == 0)
-		s1 = " ";
-	if (j == 0)
-		s2 = " ";
-	if ((n == 0) || (n >= j))
-		return (s = strcat(s1, s2));
-	return (s = strncat(s1, s2, n));
+
+	for (index = 0; index < (i - 1); index++)
+		*s = s1[index];
+		s++;
+
+	if (n >= j)
+		for (index = 0; index < (j - 1); index++)
+			*s = s2[index];
+			s++;
+	if (n < j)
+		for (index = 0; index < n; index++)
+			*s = s2[index];
+			s++;
+	return (s);
 }
