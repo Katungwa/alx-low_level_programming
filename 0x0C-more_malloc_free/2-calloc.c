@@ -23,5 +23,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		space[index] = '\0';
 
 	return (space);
-	free (space);
+	free(space);
 }
