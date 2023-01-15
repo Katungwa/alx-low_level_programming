@@ -2,37 +2,43 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatnates one string parameter to another
- * @s1: string param
- * @s2: string param
- * @n: int param
- * Return: adrress of concat string
+ * string_nconcat - Concatenates two strings using at
+ *                  most an inputted number of bytes.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate to s1.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s;
+	char *concat;
 	unsigned int len = n, index;
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 
 	for (index = 0; s1[index]; index++)
 		len++;
 
-	s = malloc(sizeof(char) * (len + 1));
+	concat = malloc(sizeof(char) * (len + 1));
 
-	if (s == NULL)
+	if (concat == NULL)
 		return (NULL);
 
 	len = 0;
-	for (index = 0; s1[index]; index++)
-		s[len++] = s1[index];
-	for (index = 0; s2[index] && index < n; index++)
-		s[len++] = s2[index];
 
-	s[len] = '\0';
-	return (s);
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
