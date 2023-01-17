@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-int main(void);
-
 /**
  * _compiler - prints name of file that was compiled
  * Return: void
