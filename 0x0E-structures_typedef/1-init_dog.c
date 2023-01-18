@@ -3,7 +3,7 @@
 
 /**
  * init_dog - initializes a struct
- * @struct dog *p: structure
+ * @d: pointer to a struct data type
  * @name: first value of struct variable
  * @age: age member
  * @owner: owner member
