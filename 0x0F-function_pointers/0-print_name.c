@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stdio.h>
 /**
  * print_name - prints a given name
  * @name: str param
