@@ -1,8 +1,9 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a func give as a param 
+ * array_iterator - executes a func give as a param
  * @size: array size
+ * @array: array to be iterated
  * @action: pointer to the func to be used
  * Return: void
  */
