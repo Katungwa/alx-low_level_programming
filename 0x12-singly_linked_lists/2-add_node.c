@@ -4,7 +4,7 @@
  * add_node - adds node at the beginning of list
  * @head - The pointer to the address of first node
  * @str: str param
- * Return: list_t struct elem address
+ * @Return: pointer
  */
 list_t *add_node(list_t **head, const char *str)
 {
