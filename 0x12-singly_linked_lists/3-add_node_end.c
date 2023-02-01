@@ -2,7 +2,7 @@
 
 /**
  * add_node_end - adds a node at the end of the list
- * @head - address of the first node
+ * @head: address of the first node
  * @str: str param
  * Return: pointer or NULL
  */

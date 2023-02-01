@@ -1,1 +1,2 @@
-This dir is all about linked list tasks
+A directory on linked list tasks
+
