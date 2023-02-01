@@ -4,7 +4,7 @@
 /**
  * print_list - prints elem in a list(no of nodes)
  * @h: link(address to next linked item)
- * return: print nil if no string and num of elements
+ * Return: num of elements
  */
 size_t print_list(const list_t *h)
 {
@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		else
 		{
-			printf("[%d] %s\n",h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		h = h->next;
 		i_node++;
