@@ -1,7 +1,5 @@
-#include "lists.h"
-
 /**
- * add_nodeint - adds node at begining of a list
+ * add_nodeint_end - adds node at begining of a list
  * @head: pointer to an address
  * @n: int param
  * Return: address of new element
