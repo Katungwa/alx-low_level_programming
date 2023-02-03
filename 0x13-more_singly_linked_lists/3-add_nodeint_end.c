@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * add_nodeint_end - adds node at begining of a list
  * @head: pointer to an address
