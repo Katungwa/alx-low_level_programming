@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  int binary_to_uint - convers a binary number to a decimal
+ *  binary_to_uint - converts a binary number to a decimal
  *  @b: the string to be converted
  *  Return: the converted number
  */
@@ -28,5 +28,5 @@ unsigned int binary_to_uint(const char *b)
 		}
 		power *= 2;
 	}
-	return (sum);	
+	return (sum);
 }
